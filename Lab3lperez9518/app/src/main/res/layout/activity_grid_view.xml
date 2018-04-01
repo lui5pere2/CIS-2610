@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 3 - Paw Angel
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/23/17
+Date completed: 03/26/17
+
+*************************************
+* Program Explanation
+*The purpose of the GridView to show multiple images in a selected area.
+*I have a GridView with a total of six images to display the image selected I have a ImageView
+*also, a button to return to MainActivity.
+************************************
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.lab3lperez9518.GridViewActivity">
+    <!--
+    *wrap_content for width and height will react on the size of the image imported
+    *horizontal & Vertical Spacing, and columnWidth is the space between each image in the GridView
+    *numColumns is the number of columns in the GridView.
+    *Images are not directly selected in the xml they will be selected in java.
+    -->
+    <GridView
+        android:id="@+id/gridViewDogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:columnWidth="160dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp" />
+    <!--
+    *The purpose of this widget is to display the image user selected in the GridView
+    *The gravity is horizontal center and parentBottom, with this the image location will always
+    *be located in the same place.
+    -->
+    <ImageView
+        android:id="@+id/imgDogs"
+        android:layout_width="270dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/ImageViewDogs" />
+    <!--Button widget to return to MainActivity-->
+    <Button
+        android:text="@string/btnBackGridViewActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgDogs"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="266dp"
+        android:id="@+id/buttonBackGridViewActivity" />
+
+</RelativeLayout>

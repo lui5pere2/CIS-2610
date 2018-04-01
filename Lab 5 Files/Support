@@ -1,0 +1,79 @@
+The following are for button for toast
+
+//notes for the lab
+
+use KEY for both activity it looks better
+Use int for numbera
+
+//Coding to make everything work. Connecting the button with the radio button.
+        Button btnResult = (Button) findViewById(R.id.ButtonResult);//Link btnResult with ButtonResult
+        btnResult.setOnClickListener(new View.OnClickListener() { //Computer listen when user clicks
+            //@Override
+            public void onClick(View v) {//All the radio buttons go a one single button click event.
+                //Using if codes to tell the computer if user uses one radio button then show message
+                if (RatButtonEuropean.isChecked()) {//if user selects European car show message
+                    Toast.makeText(POR
+                } else {//else do not do anything
+                }
+                if (RatButtonJapanese.isChecked()) {//if user select Japanese car, show message
+                    Toast.makeText(MainActivity.this, strJapanese, Toast.LENGTH_LONG).show();
+                } else {//else do not do anything
+                }
+                if (RatButtonAmerican.isChecked()) {//if selects American in radio button show message
+                    Toast.makeText(MainActivity.this, strAmerican, Toast.LENGTH_LONG).show();
+                } else {//do not do anything if is not selected
+                }
+            }
+        });
+
+
+        }
+        	}
+        		}
+        			}
+        				}
+        					}
+        						}
+        					   		}	
+        								}
+        									}
+        										}
+        											}
+        												}
+        												    }
+        													}
+        												}
+        											}
+        										}
+        									}
+        								}
+        					   		}	
+        						}
+        					}
+        				}
+        			}
+        		}
+        	}
+        }
+    }
+     do the int for the money amount
+
+     //intHoldAmount = intenger.parseInt(UserAmount.getText().toString())
+
+     //int intHoldAmount = sharedPref.getInt
+
+
+//tyo get the support running Inneed to read chapter 10 in page 390
+My main purpise ud to make it work the frame... 
+
+
+###Question: what is the frme on the video if DocRea?'
+Justin Frame work' 
+
+
+
+
+Looks good
+if{
+    the previos stame.trie
+}

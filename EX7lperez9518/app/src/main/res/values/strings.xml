@@ -1,0 +1,26 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX7 - Rent A Bike
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/13/17
+Date completed: 04/13/17
+
+*************************************
+* Program Explanation
+* String to identify the xml widgets in the java files. All are found in the MainActivity.
+************************************
+-->
+
+<resources>
+    <string name="app_name">Rent A Bike</string> <!--Title bar-->
+    <string name="btnMove">Next Activity</string> <!--Button to go to the next activity-->
+    <string name="editTxtName">What is your Name?</string> <!--EditText where user will enter name-->
+    <string name="editTxtAge">What is your Age?</string> <!--EditText where user will enter age #-->
+    <string name="editTxtEmail">What is your Email?</string> <!--EditText where user will enter email-->
+    <string name="txtViewResults" /> <!-- TextView in ResultActivity -->
+    <string name="txtViewInfo">To request to rent a bike fill out the information below</string>
+    <string name="btnReturn">Return</string>
+    <string name="imgViewOne" /> <!-- Button in ResultActivity to go to MainActivity-->
+</resources>

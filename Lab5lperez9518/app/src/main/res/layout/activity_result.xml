@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 5 - Health Tracker
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/21/17
+Date completed: 04/21/17
+
+*************************************
+* Program Explanation
+* in this xml section the goal is to display textView and imageView that will change based on the
+* user input. The widgets are empty in the design because the information that it will display
+* will be coming from the ResultActivity.java
+************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    tools:context="edu.wmich.lab5lperez9518.ResultActivity">
+
+    <!-- The information that will show in this textView will be the name & email of the user,
+     along with some other text.-->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/txtViewResult"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <!-- the purpose of the button is to take the user back to MainActivity -->
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/result_button"
+        android:text="@string/btnReturn"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <!-- This textView will display the amount the user entered in the EditText -->
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/txtViewAmount"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_below="@+id/textViewResult"/>
+
+    <!-- This widget will serve as the frame animation display, depending on the number -->
+    <ImageView
+        android:id="@+id/imageViewFrame"
+        android:contentDescription="@string/imgViewFrame"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <!--ImageView will display a tweet animation from java. Will be used multiple times-->
+    <ImageView
+        android:id="@+id/imageViewTweet"
+        android:layout_width="380dp"
+        android:contentDescription="@string/imgViewTweet"
+        android:layout_height="900dp"
+        android:layout_above="@+id/imageViewFrame"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/buttonReturn"
+        android:layout_below="@+id/textViewAmount"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

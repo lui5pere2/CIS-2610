@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX7 - Rent A Bike
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/13/17
+Date completed: 04/13/17
+
+*************************************
+* Program Explanation
+* Important data to connect the phone with the application
+************************************
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.ex7lperez9518">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 5 - Health Tracker
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/21/17
+Date completed: 04/21/17
+
+*************************************
+* Program Explanation
+* Using a ImageView widget to display an image in which is going to be full screen.
+* The Splash screen will be the first user-experience when app is launched
+************************************
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    tools:context="edu.wmich.lab5lperez9518.SplashActivity">
+
+    <!-- TextView is being used to display a text-->
+    <TextView
+        android:id="@+id/textViewQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:fontFamily="serif"
+        android:text="@string/txtViewQuote"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+                         
+    <!--The imageView will be display. it will also rotate.-->
+    <ImageView
+        android:id="@+id/imageViewLoading"
+        android:layout_width="150sp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/imgViewLoading"
+        android:src="@drawable/loading_splash"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp" />
+</RelativeLayout>

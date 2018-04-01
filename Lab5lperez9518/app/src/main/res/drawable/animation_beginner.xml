@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 5 - Health Tracker
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/21/17
+Date completed: 04/21/17
+
+*************************************
+* Program Explanation
+* In this xml file I am storing 5 images. these images will be rotating depending on the duration.
+* The folder will be linked to java in the section that match. once is running images will change.
+************************************
+-->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+
+    <item android:drawable="@drawable/beginner1" android:duration="100"/>
+    <item android:drawable="@drawable/beginner2" android:duration="100"/>
+    <item android:drawable="@drawable/beginner3" android:duration="100"/>
+    <item android:drawable="@drawable/beginner4" android:duration="100"/>
+    <item android:drawable="@drawable/beginner5" android:duration="100"/>
+
+</animation-list>

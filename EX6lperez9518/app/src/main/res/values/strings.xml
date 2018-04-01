@@ -1,0 +1,27 @@
+<resources>
+    <!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX6 - Loop Coding Center
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/30/17
+Date completed: 03/30/17
+
+*************************************
+* Program Explanation
+* String to identify the xml widgets in the java files. All are found in the MainActivity.
+************************************
+-->
+    <string name="app_name">Loop Coding Center</string>
+    <string name="imgLoop"></string>
+    <string name="txtViewTitle">Loop Coding Center Workshop</string>
+    <string name="txtViewDescription">Loop Coding Center (LCC) is committed to find new and innovative
+        ways to support students and to strengthen the impact of youth in technology through
+        educational workshops and classes in our community. The Reason LCC exist is to solve the
+        problem of lack of knowledge in computer coding and unprepared for the increase in job
+        demand in every industry. We encourage parents who have kids from ages 11 - 18 enroll
+        their kids in to this program to prepare them for the future. </string>
+    <string name="btnAppointment">REGISTER</string>
+    <string name="txtClock"></string>
+</resources>

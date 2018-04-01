@@ -1,0 +1,30 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab2: Loop Coding Center (LCC)
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/28/17
+Date completed: 02/28/17
+*************************************
+* Program Explanation
+*In the string, depending on the widgets get a text message and a resource.
+* This resource is to connect to the java.
+*
+************************************
+-->
+<resources>
+    <string name="app_name">Loop Coding Center (LCC)</string>
+    <string name="txtViewTitle">Membership Purchase</string>
+    <string name="editTxtStudents">Number of students</string>
+    <string name="TxtViewOptions">Type of memberships</string>
+    <string name="RatButtonBeginner">Beginner - $10</string>
+    <string name="RatButtonBasic">Basic - $20</string>
+    <string name="RatButtonAdvance">Advance - $30</string>
+    <string name="RatButtonPremium">Premium - $40</string>
+    <string name="BtnSubmit">Subscribe</string>
+    <string name="TxtViewResults" />
+    <string name="txtViewInfo">Our company believes that every student in the Kent County should
+        have the right to learn how to code. Our purpose  is to provide kids with the tools to
+        succeed academically and professional career</string>
+</resources>

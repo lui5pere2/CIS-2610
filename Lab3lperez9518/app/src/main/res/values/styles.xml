@@ -1,0 +1,26 @@
+<resources>
+    <!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 3 - Paw Angel
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/23/17
+Date completed: 03/26/17
+
+*************************************
+* Program Explanation
+*Some custom colors for TextView
+*Custom black theme
+*
+************************************
+-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat"> <!--To change app theme-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

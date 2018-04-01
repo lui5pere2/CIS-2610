@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 5 - Health Tracker
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/21/17
+Date completed: 04/21/17
+
+*************************************
+* Program Explanation
+* in the animation xml the file will give orders to the image on what to do. In this case is scale
+* which will make the image kinda enlarge and then go back to normal size.
+************************************
+-->
+
+<!--
+    fromXScale is the size of x side
+    toXScale is ending of size
+    fromYScale is the beginning of y size
+    toYScale the end size of y
+    pivotX & pivotY are coordinating the scale of the image
+    duration is the time that it will take effect is measure in milliseconds
+-->
+ <scale xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="1.4"
+        android:fromYScale="1.0"
+        android:toYScale="0.6"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fillAfter="false"
+        android:duration="7800" />

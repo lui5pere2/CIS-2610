@@ -1,0 +1,18 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX1: Welcome to Android
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 01/19/17
+Date completed: 01/15/17
+
+-->
+
+<resources>
+    <string name="app_name">CIS 2610</string>
+    <string name="txtGreeting">Welcome to Android</string>
+    <string name="txtClassID">lperez9518</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources><!-- The string is where we can change what the widgets will display, in this case the widget is a TextView.
+    We do not change the ID, by doing so it will affect the application. -->

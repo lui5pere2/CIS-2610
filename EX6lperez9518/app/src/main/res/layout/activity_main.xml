@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX6 - Loop Coding Center
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/30/17
+Date completed: 03/30/17
+
+*************************************
+* Program Explanation
+* The xml for this exercise was a bit complicated because everything needed to be in order to be able
+* to work and do the functions. Overall this exercise contains six widgets. one TextClock,
+*one ImageView, one Button, and thee TextView.
+************************************
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.wmich.ex6lperez9518.MainActivity">
+
+    <!--The widget to show the image on the left size of the screen. Grabbing the image from drawable -->
+    <ImageView
+        android:id="@+id/imgLoop"
+        android:layout_width="220dp"
+        android:layout_height="627dp"
+        android:contentDescription="@string/imgLoop"
+        android:src="@drawable/ex_logo" />
+    <!--The time widget showing in the top of the screen -->
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/txtClock"
+        android:layout_gravity="fill_horizontal"
+        android:textAlignment="center"
+        />
+    <!--Beginning of layout of table. Everything has to be in order in which will show in screen -->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!--Declaring the height and width of the table row-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View android:layout_height="50dp" /><!--size of the height for the following widget-->
+            <!--TextView to display the title of the app-->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FFAB3838"
+                android:padding="40dp"
+                android:text="@string/txtViewTitle"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="40sp"
+                android:typeface="serif" />
+        </TableRow><!-- end of current row-->
+    <TableRow><!-- begging new row-->
+        <View android:layout_height="70dp" /><!--size of the height for the following widget-->
+        <!--Additional information I did to display the information about what LCC is. TextView-->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text="@string/txtViewDescription"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:typeface="monospace"
+            tools:ignore="RtlHardcoded" />
+
+    </TableRow><!-- end of current row-->
+    <TableRow><!-- begging new row-->
+        <View android:layout_height="40dp"/><!--size of the height for the following widget-->
+        <!--Button which user has to click to open the calendar -->
+        <Button
+            android:id="@+id/buttonAppointment"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#2f5674"
+            android:gravity="fill_horizontal"
+            android:padding="50dp"
+            android:text="@string/btnAppointment"
+            android:textAlignment="center"
+            android:textSize="38sp"
+            android:typeface="sans" />
+    </TableRow><!-- end of current row-->
+    <!--Empty TextView widget because it will grab and display information from the java-->
+    <TableRow><!-- begging new row-->
+        <View android:layout_height="50dp"/><!--size of the height for the following widget-->
+        <TextView
+            android:id="@+id/textViewReservation"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </TableRow><!-- end of current row-->
+</TableLayout><!--End the table layout and the order rule-->
+</LinearLayout>

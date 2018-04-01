@@ -1,0 +1,24 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX4 - Math Help
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/17/17
+Date completed: 02/17/17
+
+*************************************
+* Program Explanation
+*Added strings to connect to widgets
+*
+*************************************
+-->
+
+<resources>
+    <string name="app_name">Math Help</string>
+    <string name="txtViewQuestion">Every entry will be divided by 2</string><!--textview widget-->
+    <string name="txtViewDeviation">Divide</string><!--TextView-->
+    <string name="btnSubmit">ANSWER QUESTION</string><!--Button widget-->
+    <string name="editTxtQuestion">Enter a number between 1 to 10</string><!--Text Field-->
+    <string name="txtViewResult" /><!--TextView-->
+</resources>

@@ -1,0 +1,27 @@
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX3 - Car survey
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/10/17
+Date completed: 02/10/17
+
+*************************************
+* Program Explanation
+*Replace the default theme to a dark theme by removing the previous name if the theme and switch
+*with the new one.
+*************************************
+-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat"> <!--To change app theme-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

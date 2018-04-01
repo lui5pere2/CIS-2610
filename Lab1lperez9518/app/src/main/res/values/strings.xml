@@ -1,0 +1,32 @@
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab1: North America Life
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/2/17
+Date completed: 02/2/17
+
+*************************************
+* Program Explanation
+*String page is where I can change the text of many widgets. Including TextView, buttons text,
+*and also change the name of the activity bar. We add strings by going to the widget properties,
+*later if needed we can edit the strings in here.
+*************************************
+-->
+
+<resources>
+    <string name="app_name">North America Life</string>
+    <string name="txtAppT">Hispanic Culture</string>
+    <string name="btnCulture">Culture</string>
+    <string name="btnFamily">Family</string>
+    <string name="txtCulture">Culture</string>
+    <string name="txtCultureDescription">Ideas, beliefs, and customs in which people are
+        emotionally attached.</string>
+    <string name="txtFamily">Family</string>
+    <string name="txtFamilyDescription">"Family (Familismo)for Latinos tends to be highly
+        group-oriented. A strong emphasis is placed on family. "</string>
+    <string name="btnReturnCulture">Return to Home</string>
+    <string name="btnReturnFamily">Return to Home</string>
+</resources>

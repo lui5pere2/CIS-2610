@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 3 - Paw Angel
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/23/17
+Date completed: 03/23/17
+
+*************************************
+* Program Explanation
+*Change the setting of the app to allow SplashActivity be the first activity to show when app is open.
+*
+************************************
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.lab3lperez9518">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"> <!--Changed from MainActivity to SplashActivity.-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" /> <!--Select the activity that will be after Splash-->
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".MusicActivity" />
+        <activity android:name=".ImageActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX5 - Top 4 Advertisement
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/16/17
+Date completed: 03/16/17
+
+*************************************
+* Program Explanation
+*I am not making any changes to the manifest file because the exercise is not needed.
+*android codes contain information about the app like icon image, app title, theme and activity.
+************************************
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.ex5lperez9518">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

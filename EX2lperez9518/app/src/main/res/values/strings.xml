@@ -1,0 +1,21 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX2
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 01/27/17
+Date completed: 01/26/17
+*************************************
+* Program Explanation string files are sequense of characters. String can be understand as an object of the class
+*************************************
+-->
+
+<!--Four strings where I can edit to change the text of the texviews and buttons. I have two textviews one with the title of a car brand
+and other TexView with the description of two cars. I have a button with the string btnExplore.-->
+<resources>
+    <string name="app_name">German Auto Maker</string>  <!--Change the name of the app on the title bar -->
+    <string name="txtTitle">Audi</string> <!--Display TextView widget on main activity with the text Audi -->
+    <string name="btnExplore">Explore Models</string> <!-- Button widget on the main activity to get to modelsActivity -->
+    <string name="txtDescription">Audi S6 and RS6 models are designed for high performace in the track but also luxury to drice around in the city.</string> <!-- TextViws with description of cars on ModelsActivity-->
+</resources>

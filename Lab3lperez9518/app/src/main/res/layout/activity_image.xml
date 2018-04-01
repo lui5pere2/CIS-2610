@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 3 - Paw Angel
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/23/17
+Date completed: 03/26/17
+
+*************************************
+* Program Explanation
+*This ImageActivity will show a full screen image of a dog named Bu and a button widget.
+************************************
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/thank_bu"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.lab3lperez9518.ImageActivity">
+    <!--Button to take user to MainActivity-->
+    <Button
+        android:text="@string/btnBackImageActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBackImageActivity"
+        android:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <!--TextView to display information text to user-->
+    <!--Drop down list activity -->
+    <!--Button to submit the information of the user and to get answer back-->
+
+    <TextView
+        android:text="@string/txtViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewInformation"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:layout_below="@+id/spinQuestion"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinQuestion"
+        android:entries="@array/arrQuestion"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textViewInformation"
+        android:layout_alignParentStart="true" />
+
+    <!--ImageView to display a .png image from the drawable folder covering the entire screen-->
+</RelativeLayout>

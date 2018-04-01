@@ -1,0 +1,26 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX5 - Top 4 Advertisement
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/16/17
+Date completed: 03/16/17
+
+*************************************
+* Program Explanation
+*Use styles.xml to change the theme of the app to dark
+*
+************************************
+-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat"> <!--To change app theme-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

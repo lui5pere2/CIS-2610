@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab1: North America Life
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/2/17
+Date completed: 02/2/17
+
+*************************************
+* Program Explanation
+*This is my second activity of the lab. If user clicks Culture button on main activity
+*this is what the user will experience. In this activity I only added four widgets. Two TextView with
+*the text Culture and description of culture, ImageView, and a button with the text Return Home
+*which will return to main activity.
+*************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_culture_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.lab1lperez9518.CulturePage">
+<!--Used as a title page this TextView displays a text Culture. Changed color and text size.-->
+    <TextView
+        android:text="@string/txtCulture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCulture"
+        android:textSize="56sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark" />
+<!--Not required but I wanted to do a little extra. This btnReturnCulture is a button widget with
+the purpose to take the user back to main activity -->
+    <Button
+        android:text="@string/btnReturnCulture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReturn_Culture"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+<!--A send image in the lab to illustrate what is culture. As before I am using .png file.
+Not much modification just resizing -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/culture_photo"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/buttonReturn_Culture"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        android:layout_below="@+id/textViewCulture" />
+<!--A short sentence with the description of culture. I change the size to be able to fit and also
+textAlignment in the middle.-->
+    <TextView
+        android:text="@string/txtCultureDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCultureDescription"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_above="@+id/buttonReturn_Culture"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/holo_green_dark" />
+
+</RelativeLayout>

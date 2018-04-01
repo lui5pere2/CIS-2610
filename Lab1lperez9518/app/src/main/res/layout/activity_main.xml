@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab1: North America Life
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/2/17
+Date completed: 02/2/17
+
+*************************************
+* Program Explanation
+*When the user launched the North America Life app the welcome page will be activity_main.
+*In here the user will be able to have two options, uisng button widget
+*the user can navigate to the CulturePage by clicking Culture bottom. Else, user selects Family
+*bottom which will move to FamilyPage. In the activity_main.xml we make adjustments on how the app
+*will present, by making it user-friendly. Adding widgets, in this case I am using four widgets.
+*One TextView displaying "Hispanic Culture" on the top of the app. Two buttons,
+*in which the user will be able to select to move to the next activity.
+*One ImageView to personalize and make the app feel more friendly to use.
+*************************************
+-->
+<!--Auto generated-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.lab1lperez9518.MainActivity">
+
+<!--TextView widget or it can be also describe as an object. Hispanic Culture is the text it will
+display on the app. Two important confirmations on this widget would be textSize and textColor,
+this is personal choice.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAppT"
+        android:id="@+id/TextViewAppTheme"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="22dp" />
+<!--using a widget button to display the text Culture with the purpose to once clicked it will
+ change to a different activity.-->
+    <Button
+        android:text="@string/btnCulture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/buttonCulture"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+<!--Second button widget with the text Family same purpose as the btnCulture button but this
+button will take the user to FamilyPage activity. -->
+    <Button
+        android:text="@string/btnFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/buttonFamily"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+<!--Using ImageView to display an image. The file of this picture is .png to match the
+backgroud color of the app.  -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/homepage_photo"
+        android:id="@+id/imageViewMain"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttonCulture"
+        android:layout_below="@+id/TextViewAppTheme"
+        android:contentDescription="Covert Picture" />
+</RelativeLayout>

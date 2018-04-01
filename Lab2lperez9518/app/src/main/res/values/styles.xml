@@ -1,0 +1,25 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab2: Loop Coding Center (LCC)
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/28/17
+Date completed: 02/28/17
+*************************************
+* Program Explanation
+*style.xml is where can can permanently change the theme of the app
+* check for custom color on widgets. I have three colors for textView widgets.
+************************************
+-->
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <!-- Color for the text of textView-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

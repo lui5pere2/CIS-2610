@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX3 - Car Survey
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/10/17
+Date completed: 02/10/17
+
+*************************************
+* Program Explanation
+* The activity includes a textView, one button, and a RadioGroup which contains three RadioButton.
+* The new widgets that I am working are the RadioButton. There are three Radio Button inside
+*the RadioGroup by doing this, the user will only chose one and not multiples.
+*************************************
+-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.ex3lperez9518.MainActivity">
+
+<!--TextView Widget to display text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTopic"
+        android:id="@+id/textViewTopic"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignParentStart="true" />
+<!--Used to submit the choose of the user-->
+    <Button
+        android:text="@string/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"
+        android:id="@+id/ButtonResult"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+<!--The Radio group where the Radio Buttons are contained -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/CarSelect"
+        android:layout_below="@+id/textViewTopic"
+        android:layout_centerHorizontal="true">
+<!--RadioButton to show the selection of European cars. By default this radio it will be selected-->
+        <RadioButton
+            android:text="@string/RatButtonEuropean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioButtonEuropean"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:checked="true" />
+<!--If user doesn't want European models, they have the option to select another one. User
+ can only select one of the three radio.-->
+        <RadioButton
+            android:text="@string/RatButtonJapanese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioButtonJapanese"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+<!--Last option user have-->
+        <RadioButton
+            android:text="@string/RatButtonAmerican"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioButtonAmerican"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+</RelativeLayout>

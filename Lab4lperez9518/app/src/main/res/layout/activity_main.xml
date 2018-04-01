@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab4 - Perez Auto Service
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/6/17
+Date completed: 04/6/17
+
+*************************************
+* Program Explanation
+* This lab contains 14 widgets in which 13 mare inside a LinearLayout to make a list.
+* One RadioGroup that holds 4 radio buttons. 2 buttons to click to show calendar. one textClock to
+* show the current time as a widget.
+************************************
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.wmich.lab4lperez9518.MainActivity">
+
+    <!--Image must be outside the TableLayout. The image is to be default as vertical. -->
+    <ImageView
+        android:id="@+id/imageViewAudi"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/imgAudi"
+        android:src="@drawable/main_image" />
+
+
+    <!--Begin the TableLayout. Everything from here will be in list-->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--The TextClock will be showed in the design as the forts one because that is the way
+        of the order-->
+       <TableRow
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <View android:layout_height="50dp"/>
+           <TextClock
+               android:id="@+id/textClockMain"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:contentDescription="@string/txtClockMain"
+               android:textAlignment="center"
+               android:textSize="24sp" />
+        </TableRow>
+
+
+        <!--TextView to show text is not connecting to anything in else. Is title text-->
+        <TableRow><!-- begging new row this is TextView-->
+            <View android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/textViewSlogan"
+                android:layout_width="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:background="#FFAB3838"
+                android:padding="10dp"
+                android:text="@string/txtViewSlogan"
+                android:textAlignment="center"
+                android:textColor="#0a1e2f"
+                android:textSize="30sp"
+                android:typeface="serif" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--The second textView-->
+        <TableRow><!-- TextView row begins-->
+            <View android:layout_height="70dp"/>
+            <TextView
+                android:id="@+id/textViewInfo"
+                android:padding="10dp"
+                android:text="@string/txtViewInfo"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:typeface="monospace"
+                android:stretchColumns="1" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--The radioButtons are in a group-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupService"
+            android:checked="true">
+            <RadioButton
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonBrake"
+                android:text="@string/RadButtonBreak"
+                android:checked="true" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RadButtonTune"
+                android:id="@+id/radioButtonTune" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RadButtonEngine"
+                android:id="@+id/radioButtonEngine" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RadButtonInspection"
+                android:id="@+id/radioButtonInspection" />
+        </RadioGroup>
+
+
+        <!-- Asking the user for a question on a textView-->
+        <TableRow><!-- TextView row begins-->
+            <View android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                android:padding="10dp"
+                android:stretchColumns="1"
+                android:text="@string/txtViewQuestion"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--This lines are for the spinner. The spinner contains a dropdown list with options.
+        in this case I have -->
+        <TableRow><!-- Spinner row begins-->
+            <View android:layout_height="20dp"/>
+
+            <Spinner
+                android:id="@+id/spinQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewInformation"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:entries="@array/arrQuestion"
+                android:textAlignment="center" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--First button for normal calendar. First button to have the user select a date on calendar-->
+        <TableRow><!-- Button row begins-->
+            <View android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/buttonAppointment"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#2f5567"
+                android:gravity="fill_horizontal"
+                android:padding="5dp"
+                android:text="@string/btnAppointment"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:typeface="sans" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--Second button for backup. This is level 4 because is another button
+        In here the user will select a different appointment 4 days later than main appointment  -->
+        <TableRow><!-- Button row begins-->
+            <View android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/buttonBackup"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#2f5567"
+                android:gravity="fill_horizontal"
+                android:padding="5dp"
+                android:text="@string/btnBackup"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:typeface="sans" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--Second button for backup. This is level 4 because is another button
+        In here the user will select a different appointment 4 days later than main appointment  -->
+        <TableRow><!-- Button row begins-->
+            <View android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/buttonFinal"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#2f5567"
+                android:gravity="fill_horizontal"
+                android:padding="5dp"
+                android:text="@string/btnFinal"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:typeface="sans" />
+        </TableRow><!-- end of widget-->
+
+
+
+        <!--The empty textView where text will be displayed. This would be consider main TextView -->
+        <TableRow><!-- TextView row begins-->
+            <View android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/textViewResult"
+                android:text="@string/txtViewResult"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </TableRow><!-- end of widget-->
+
+
+        <!--TextView widget with no empty text that way the the java SetText will show the result -->
+        <TableRow><!-- TextView row begins-->
+            <View android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/textViewBackup"
+                android:text="@string/txtViewBackup"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </TableRow><!-- end of widget-->
+    </TableLayout>
+
+</LinearLayout>

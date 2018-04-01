@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab2: Loop Coding Center (LCC)
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/28/17
+Date completed: 02/28/17
+
+*************************************
+* Program Explanation
+*Show the name and image icon that it will show on the actual phone screen
+* In this activity I have not change anything to the Manifest.
+*very important information, with this app can access phone.
+************************************
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wmich.lab2lperez9518">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

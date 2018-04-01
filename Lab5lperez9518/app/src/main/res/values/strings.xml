@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Health Tracker</string>
+    <string name="txtViewQuote">Keep Moving Forward.</string>
+    <string name="editTxtName">Enter your Name</string>
+    <string name="editTxtEmail">Enter your email</string>
+    <string name="editTxtDonation">Enter amount</string>
+    <string name="txtViewQuestion">How many time per week do you exercise?</string>
+    <string name="txtViewInfo">To keep track of your profile, please provide us with your contact information.</string>
+    <string name="btnSwitch">Continue</string>
+    <string name="txtViewResult" />
+    <string name="btnReturn">Return</string>
+    <string name="txtViewAmount" />
+    <string name="imgViewFrame"/>
+    <string name="imgViewLoading" />
+    <string name="imgViewTweet"/>
+</resources>

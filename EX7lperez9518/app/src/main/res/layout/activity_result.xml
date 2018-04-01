@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX7 - Rent A Bike
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/13/17
+Date completed: 04/13/17
+
+*************************************
+* Program Explanation
+* three widgets, only one required. One TextView, one ImageView, one Button.
+*
+*
+************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.wmich.ex7lperez9518.ResultActivity"
+    android:background="#C0C0C0">
+
+    <!-- The purpose of the TextView is to display the text from java in MainActivity -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewResults"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Image PGN-->
+    <ImageView
+        android:id="@+id/imageViewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/imgViewOne"
+        android:src="@drawable/ex7_activity2" />
+    <!-- Button to return to MainActivity-->
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnReturn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageViewOne"
+        android:layout_marginStart="27dp" />
+</RelativeLayout>

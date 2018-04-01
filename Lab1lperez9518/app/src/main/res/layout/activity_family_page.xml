@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab1: North America Life
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/2/17
+Date completed: 02/2/17
+
+*************************************
+* Program Explanation
+*Same widgets as found in activity_culture_page.xml I am using four widgets with the same purpose.
+*Two TextView, one ImageView, and a Button. The content of this activity is about Family.
+*************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_family_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.lab1lperez9518.FamilyPage">
+<!--Displayed on the activity will be Family. Edited textSize and textColor. -->
+    <TextView
+        android:text="@string/txtFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewFamily"
+        android:textSize="56sp"
+        android:textColor="@android:color/holo_green_light" />
+<!--A short description of family will be display in this TextView -->
+    <TextView
+        android:text="@string/txtFamilyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/textViewFamilyDescription"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/holo_blue_bright" />
+<!--.png file of a group of people statues representing family -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/family_photo"
+        android:id="@+id/imageViewFamily"
+        android:layout_above="@+id/textViewFamilyDescription"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewFamily" />
+<!--A button to return to the main activity -->
+    <Button
+        android:text="@string/btnReturnFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonReturn_Family"
+        android:textSize="18sp" />
+
+</RelativeLayout>

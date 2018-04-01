@@ -1,0 +1,25 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX3 - Car survey
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/10/17
+Date completed: 02/10/17
+
+*************************************
+* Program Explanation
+*Strings where we can edit text display
+*
+*************************************
+-->
+
+
+<resources>
+    <string name="app_name">Car Survey</string> <!--Edit action bar title-->
+    <string name="RatButtonAmerican">American Cars</string><!--Radio button-->
+    <string name="RatButtonEuropean">European Cars</string><!--Radio button-->
+    <string name="RatButtonJapanese">Japanese Cars</string><!--Radio button-->
+    <string name="txtTopic">Select a car you would buy</string>
+    <string name="btnResult">Submit</string> <!-- button widget-->
+</resources>

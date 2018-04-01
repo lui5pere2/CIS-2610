@@ -1,0 +1,48 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 3 - Paw Angel
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/23/17
+Date completed: 03/26/17
+
+*************************************
+* Program Explanation
+* The String page is to identify the widgets to help connect to java
+************************************
+-->
+<resources>
+    <!--The app name that will display in homepage and in the app-->
+    <string name="app_name">Paw Angel</string>
+    <!--The string for the SplashView-->
+    <string name="txtSplash" />
+    <!--String for the ListView in MainActivity-->
+    <string name="textViewAdoption" />
+    <!--Strings to where the image selected will show in the GridViewActivity-->
+    <string name="ImageViewDogs" />
+    <!--Image of the friendly puppy on MusicActivity-->
+    <string name="imgViewPuppy" />
+    <!--Image of the angry dog in MusicActivity -->
+    <string name="imgViewAngry" />
+    <!--Button in MusicActivity to play sound-->
+    <string name="btnPlayfulDog">Play Friendly Barking Sound</string>
+    <!--Button in MusicActivity to play sound-->
+    <string name="btnAngryDog">Play Angry Barking Sound</string>
+    <!--Text to display in the SplashActivity-->
+    <string name="txtViewTitle">Paw Angel</string>
+    <!--Button to return to MainActivity from GridViewActivity-->
+    <string name="btnBackGridViewActivity">Back</string>
+    <!--Button to return to MainActivity from MusicActivity-->
+    <string name="btnBackMusicActivity">Back</string>
+    <!--Button to return to MainActivity from ImageActivity-->
+    <string name="btnBackImageActivity">Back</string>
+    <!--Button to submit the user selection of the Spinner in ImageActivity-->
+    <string name="btnSubmit">Submit</string>
+    <!--Spinner the dropdown list-->
+    <string name="txtViewInstruction">Who rescued who?</string>
+    <string-array name="arrQuestion">
+        <item>I rescued Bu and Max</item>
+        <item>Bu and Max rescued me</item>
+    </string-array>
+</resources>

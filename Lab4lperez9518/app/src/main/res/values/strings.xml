@@ -1,0 +1,38 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab4 - Perez Auto Service
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/6/17
+Date completed: 04/6/17
+
+*************************************
+* Program Explanation
+* This lab contains 14 widgets in which 13 mare inside a LinearLayout to make a list.
+* One RadioGroup that holds 4 radio buttons. 2 buttons to click to show calendar. one textClock to
+* show the current time as a widget.
+************************************
+-->
+<resources>
+    <string name="app_name">Perez Auto Repair</string>
+    <string name="imgAudi"></string>
+    <string name="txtClockMain"></string>
+    <string name="txtViewSlogan">You Care for Your Car. We Care For You</string>
+    <string name="txtViewInfo">Bring your Car For Repair</string>
+    <string name="RadButtonBreak">Brake Service</string>
+    <string name="RadButtonTune">Tune-Up Service</string>
+    <string name="RadButtonEngine">Engine Service</string>
+    <string name="RadButtonInspection">Check for Inspection</string>
+    <string name="btnAppointment">Bring Your Car to Us</string>
+    <string name="btnBackup">Select a Backup Day</string>
+    <string name="txtViewQuestion">Select the job option</string>
+    <string name="btnFinal">Confirm Reservation</string>
+    <string name="txtViewResult"></string>
+    <string name="txtViewBackup"></string>
+    <string-array name="arrQuestion">
+        <item>To make the job quick on </item>
+        <item>To make the job done on </item>
+        <item>To take time to get job done on </item>
+    </string-array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX4 - Math Help
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/17/17
+Date completed: 02/17/17
+
+*************************************
+* Program Explanation
+*The overview of this exercise is to create an app for division problems . There are a few rules
+*where the user can only type numbers and it has to be numbers from 1 through 10.
+*Using three textViews, one Button and one EditText.
+*************************************
+-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.ex4lperez9518.MainActivity">
+
+<!--TextView widget of a 46 scaled pixel to show a title text of Divide-->
+    <TextView
+        android:text="@string/txtViewDeviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textViewDeviation"
+        android:textSize="46sp" />
+
+<!--Instructing to the user what will have when they input a number-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewQuestion"
+        android:id="@+id/textViewQuestion"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+<!--This widget is a number Text Field that will allow  us to make the user input just number
+ by using a soft keyboard that it shows only numbers. Also, I added a hint
+  which will help the user by giving instructions-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextQuestionBox"
+        android:hint="@string/editTxtQuestion"
+        android:layout_above="@+id/textViewQuestion"
+        android:layout_marginBottom="39dp"
+        android:layout_alignStart="@+id/textViewQuestion"
+        android:layout_alignEnd="@+id/textViewQuestion"
+        android:textAlignment="center" />
+<!--A button widget that user will have to click to get answer-->
+    <Button
+        android:text="@string/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:textSize="18sp"
+        android:layout_below="@+id/textViewQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:textAlignment="center" />
+<!-- This textView it looks like is invisible in the design activity and that is because it needs to
+empty to be used to show the answer. It will be fill out using the java code.-->
+    <TextView
+        android:text="@string/txtViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:id="@+id/textViewAnswer"
+        android:textSize="18sp" />
+
+</RelativeLayout>

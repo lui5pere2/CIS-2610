@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab1: North America Life
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 02/2/17
+Date completed: 02/2/17
+
+*************************************
+* Program Explanation
+*This page is where we find colors we add to widgets, only if created my own. In this case I did not
+*I used built-in colors, that is why there is no resources for mine.
+*************************************
+-->
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 5 - Health Tracker
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/21/17
+Date completed: 04/21/17
+
+*************************************
+* Program Explanation
+* For main activity I have 3 editText, 2 textView and one button.
+* the job of the editText is to make the user input the
+************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    tools:context="edu.wmich.lab5lperez9518.MainActivity">
+
+    <!--EditText for any character to be entered. this will be where user enters name-->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/editTxtName"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <!--This editText is to enter the email of the user. is customize to me email so keyboard match-->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/editTxtEmail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <!--EditText where user will enter a number. Number is the only character it can enter-->
+    <EditText
+        android:id="@+id/editTextDonation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSwitch"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/editTxtDonation"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <!--TextView to give information to the user-->
+    <TextView
+        android:id="@+id/textViewquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextDonation"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txtViewQuestion"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <!--TextView to give information to the user-->
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txtViewInfo"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- button to move to the next activity it has custom background-->
+    <Button
+        android:id="@+id/buttonSwitch"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_image"
+        android:text="@string/btnSwitch"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="328dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"/>
+
+</RelativeLayout>

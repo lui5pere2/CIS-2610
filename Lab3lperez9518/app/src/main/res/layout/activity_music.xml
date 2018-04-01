@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 3 - Paw Angel
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/23/17
+Date completed: 03/26/17
+
+*************************************
+* Program Explanation
+*A total of five widgets. Two are ImageView displaying .png files. Additionally, three Button widgets.
+*The images are for illustration. buttons make some actions, play, pause music and return MainActivity.
+************************************
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.wmich.lab3lperez9518.MusicActivity">
+    <!--Display image of an angry dog-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/angry_dog"
+        android:id="@+id/imageViewAngry"
+        android:contentDescription="@string/imgViewAngry"
+        android:layout_marginTop="306dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <!--Display image of a happy dog-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/playful_dog"
+        android:id="@+id/imagenViewPuppy"
+        android:contentDescription="@string/imgViewPuppy"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="322dp" />
+    <!--
+    *Button to give instruction to play audi of a puppy barking. The Button widget has an ID
+    *Connected to the java to change text inside the button.
+    -->
+    <Button
+        android:text="@string/btnPlayfulDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:id="@+id/buttonPlayful" />
+    <!--Another button with the function of playing and pausing music. Linked to java-->
+    <Button
+        android:text="@string/btnAngryDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPlayful"
+        android:layout_alignStart="@+id/buttonPlayful"
+        android:layout_marginTop="55dp"
+        android:id="@+id/buttonAngry" />
+    <!--Return Button to MainActivity-->
+    <Button
+        android:text="@string/btnBackMusicActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBackMusicActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

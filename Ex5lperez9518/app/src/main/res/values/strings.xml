@@ -1,0 +1,20 @@
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+EX5 - Top 4 Advertisement
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 03/16/17
+Date completed: 03/16/17
+
+*************************************
+* Program Explanation
+*In the string section we do not have many things nor we change a lot. The reason is because the
+*exercise it was not required. I change the title of the app. The new name is Top 4 Advertisement.
+*
+************************************
+-->
+<resources>
+    <string name="app_name">Top 4 Advertisement</string>
+
+</resources>

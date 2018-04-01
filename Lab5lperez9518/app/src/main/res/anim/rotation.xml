@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Programmer: Luis Perez
+Class ID: lperez9518
+Lab 5 - Health Tracker
+CIS 2610: Business Mobile Programming
+Spring 2017
+Due date: 04/21/17
+Date completed: 04/21/17
+
+*************************************
+* Program Explanation
+* in the animation xml the file will give orders to the image on what to do. For rotate it will
+* make the image rotate in the same space and without changing sizes.
+************************************
+-->
+
+<!--
+    fromDegrees is the starting position
+     toDegrees is the ending position
+     pivotX & pivotY are coordinating the scale of the image
+     duration is the time that it will take effect is measure in milliseconds
+     repeatCount is to tell how many time will it rotate
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="359"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="2000"
+    android:repeatCount= "-1" />
+
